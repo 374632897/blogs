@@ -2,7 +2,7 @@
 * @Author: Jiang Guoxi
 * @Date:   2016-08-21 05:35:34
 * @Last Modified by:   Jiang Guoxi
-* @Last Modified time: 2016-08-21 06:00:38
+* @Last Modified time: 2016-08-21 06:27:59
 */
 const t = require('./base');
 module.exports = function (article = {}) {
@@ -12,9 +12,12 @@ module.exports = function (article = {}) {
   // //   html += `<li><a href = ${item.href} title = ${item.title} >${item.title}</a></li>`;
   // // });
   // html += '</ul>';
-  return `
+  const content = `
   <div class = 'article-content'>
-    ${artile.content}
+    ${article.content}
   </div>
   `;
+  return t({
+    content
+  });
 }

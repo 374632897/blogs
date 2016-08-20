@@ -1,12 +1,10 @@
 /*
 * @Author: Jiang Guoxi
-* @Date:   2016-08-21 06:01:36
+* @Date:   2016-08-21 06:22:54
 * @Last Modified by:   Jiang Guoxi
-* @Last Modified time: 2016-08-21 06:23:11
+* @Last Modified time: 2016-08-21 06:23:17
 */
-const fs = require('fs');
-const list = require('../../template/list');
-const testData = [{
+exports.articles = [{
   href: 'test1.html',
   title: 'test1'
 },{
@@ -24,7 +22,4 @@ const testData = [{
 },{
   href: 'test1.html',
   title: 'test5'
-},];
-
-// fs.writeFileSync('test.html', list(testData));
-// console.log(list(testData));
+}];
