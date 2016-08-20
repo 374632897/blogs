@@ -2,7 +2,7 @@
 * @Author: Jiang Guoxi
 * @Date:   2016-08-21 06:19:16
 * @Last Modified by:   Jiang Guoxi
-* @Last Modified time: 2016-08-21 06:26:56
+* @Last Modified time: 2016-08-21 06:42:15
 */
 const fs = require('fs');
 const data = fs.readFileSync('./test.md').toString();
@@ -17,3 +17,4 @@ marked(data, (err, html) => {
     content: html
   }));
 });
+console.log(fs.statSync('./test.html'));
